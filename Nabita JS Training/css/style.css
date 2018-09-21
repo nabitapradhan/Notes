@@ -1,0 +1,124 @@
+
+#mainHeader{
+	background-color:#E8CCD4;
+	color:red;
+	width:300px;
+	text-align: center;
+	padding: 50px;
+	border: solid 10px yellow;
+	margin:0;
+	font-family: 'Lobster', cursive;
+
+
+}
+#mainHeader:hover
+{
+	font-family: 'Gamja Flower', cursive;
+	background-color:#2E294E;
+	border: solid 10px  pink;
+	color: white;
+	cursor: pointer;
+
+}
+ #boxParagraph
+ {
+ 	background-color: #00A878;
+ 	color: black;
+ 	width:800px;
+ 	padding: 50px;
+ 	border:dotted; 5px ;
+ 	margin:20px;
+	font-family: 'Pacifico', cursive;
+ }
+
+ #imageStyle
+ {
+ 	border:solid 2px yellow;
+ 	width:19%;
+	
+ }
+table{
+	border:solid 1px black;
+	margin:80px auto;
+	width:400px;
+	font-size: 30px;
+}
+tr{
+		border:solid 1px black;
+
+}
+td
+{
+		border:solid 1px black;
+
+}
+th
+{
+text-align: left;
+background-color: white;
+}
+tr:nth-child(even)
+{
+	background-color: maroon;
+}
+tr:nth-child(odd)
+{
+	background-color: pink;
+}
+ol
+{
+	font-size: 30px;
+	list-style-type: upper-alpha;
+}
+ul
+{
+	font-size: 30px;
+	list-style-type:circle;
+}
+
+#pandaContainer
+{
+	margin:10px auto;
+	width:95vw;
+	padding-left: 1%;
+}
+
+.mySlides
+{
+	border: solid 2px blue;
+
+
+}
+
+.DatePEven
+{
+	background-color: tomato;
+	font-size: 20px;
+	margin:0;
+}
+.DatePOdd
+{
+
+	background-color: blue;
+	color: white;
+	font-size: 20px;
+	margin:0;
+
+}
+#dateContainer
+{
+	margin-top: 10px;
+}
+#message
+{
+	display:none;
+	top:10px;
+	position: absolute;
+	width: 300px;
+	text-align: center;
+	background-color: pink;
+	border: solid 2px yellow;
+	border-radius: 50px;
+	left: 40vw;	
+}
+}

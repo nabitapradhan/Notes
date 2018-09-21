@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Monday</title>
+	
+	<style>
+	body
+	{
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	input{
+
+		width:600px;
+		height:300px;
+		font-size: 80px;
+	}
+	#mainImg
+	{
+		width:400px;
+		display: block;
+		margin:auto;
+		margin-bottom: 20px;
+	}
+	.smallImg
+	{
+		width:24%;
+	}
+</style>
+
+</head>
+<body background="./img/5.jpg">
+
+<h1 id="timer"> How long have I been here: 0:00 </h1>
+
+<h1 id="wordCount">Word Count: </h1>
+<input id="ourInput1" onfocus="FocusInput(this)" onblur="BlurInput(this)" onkeydown="CountLetters(this)"><br><br>
+
+
+
+<button onclick="AreaOfCube()"><font size=5>cube</button></font>
+<br><br>
+<button onclick="PosOrNeg()"><font size=5>Check</button></font><br><br>
+
+<img src="./img/3.jpeg"  id="mainImg">
+
+<img src="./img/2.jpeg" class="smallImg"  onclick="ChangePicture(this)">
+<img src="./img/1.jpeg" class="smallImg"  onclick="ChangePicture(this)">
+<img src="./img/4.jpeg" class="smallImg"  onclick="ChangePicture(this)">
+<img src="./img/5.jpeg" class="smallImg"  onclick="ChangePicture(this)">
+
+
+ 
+<script src="./js/main.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,47 @@
+#fluidTest
+{
+	background-color: tomato;
+
+}
+#containerTest{
+	margin-top:40px;
+	background-color: cyan;
+}
+
+.colHead{
+	background-color: yellow;
+}
+
+#myNav
+{
+	background-color:slateblue;
+
+}
+#imgContainer{
+	background-color: darkblue;
+	-webkit-box-shadow: 1px 3px 14px 8px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 3px 14px 8px rgba(0,0,0,0.75);
+	box-shadow: 1px 3px 14px 8px rgba(0,0,0,0.75);
+	padding: 30px 0 !important;
+
+}
+.image{
+	width: 100%;
+}
+.Imgstyle
+{
+	margin-bottom: 20px;
+}
+#Banner
+{
+	background-color: slateblue;
+	width:1600px;
+	padding-top: 20px;
+	height: 80px;
+	text-align: center;
+}
+#footer
+{
+	background-color:slateblue;
+	width:1760px;
+}

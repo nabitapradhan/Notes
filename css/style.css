@@ -1,3 +1,8 @@
+
+* {
+  margin: 0; 
+  padding: 0; 
+}
 .Tabledata
 {
 	width: 50px;
@@ -6,3 +11,27 @@
 
 
 }
+
+table { 
+  border-collapse: collapse; 
+  border-spacing: 0; 
+}
+
+#nestedTable { 
+  padding: 0px; 
+  margin: 0 auto; 
+  border: 2px solid #181818; 
+}
+
+#nestedTable tr td { 
+  width: 60px; 
+  height: 60px; 
+}
+
+#nestedTable tr:nth-child(2n) td:nth-child(2n+1) { 
+  background: #9f9f9f; 
+}
+
+#nestedTable tr:nth-child(2n+1) td:nth-child(2n) { 
+  background: #9f9f9f; 
+} 
