@@ -231,3 +231,98 @@ function EmailAlert()
 	}
 
 }
+
+//String Methods
+//IndexAt 
+
+function IndexAt(str,char)
+{
+	for(var i=0;i<str.length;i++)
+	{
+		if(str.charAt(i)==char){
+			console.log(i);
+			break;
+		}
+	}
+}
+IndexAt("dogogg","g");
+
+
+//Includes
+function IncludesChar(str,char)
+{
+	for(var i=0;i<str.length;i++)
+	{
+		if(str.charAt(i)==char)
+		{
+			return true;
+		}
+	}
+	return false;
+}
+console.log(IncludesChar("fish","i"));
+
+//Slice
+function SliceString(str,start,stop)
+{
+	var word="";
+	for(var i=start ;i<stop ;i++)
+	{
+		word += str[i];
+	}
+	console.log(word);
+}
+SliceString("apple",1,4);
+
+//Replace
+function Replace(str,index,char)
+{
+	var str1=str.slice(0,index);
+	var str2=str.slice(index+1,str.length);
+	console.log(str1 + char + str2);	
+}
+Replace("butter",1,"e");
+
+function ModString(val)
+{
+	if(typeof val!="string")
+	{
+		console.log("Please use a string");
+		return;
+	}
+	this.val=val,
+	this.modSlice=function(start,stop)
+	{
+		var newVal="";
+		for(var i=start;i<=stop;i++)
+		{
+			newVal +=this.val[i];
+		}	
+		this.val=newVal;
+	},
+	this.LastIndex = function(char){
+		for(var i=this.val.length;i>=0;i--)
+		{
+			if(this.val.charAt(i)==char)
+			{
+				console.log(i);
+				break;
+			}
+		}
+	}
+
+this.countlength=function(){
+	var count=0;
+	while(this.val[count]!=undefined){
+		count++;
+
+	}	
+	console.log(count);
+}
+}
+var myString= new ModString("This is my string");
+var babycat=new ModString("kitten");
+babycat.countlength();
+myString.LastIndex("m");
+myString.modSlice(1,4);
+console.log(myString.val);
