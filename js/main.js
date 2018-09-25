@@ -1,15 +1,15 @@
 "use strict";
 
 
-/*var randArr=[];
+var randArr=[];
 for(var i=0;i<10;i++)
 {
 	
 	randArr.push(Math.ceil(Math.random()*101));
 }
-console.log(randArr);*/
+console.log(randArr);
 
-/*var chars=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","@","{","[","|",".","?","#","$","%","^","&","*"];
+var chars=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","@","{","[","|",".","?","#","$","%","^","&","*"];
 var pass=" ";
 var a=Math.floor(Math.random()*5);
 a +=12;
@@ -25,9 +25,9 @@ for(var j=0; j<a ;j++)
 		pass +=chars[index];
 	}
 }
-console.log(pass);*/
+console.log(pass);
 
-/*for(var i=0;i<5;i++)
+for(var i=0;i<5;i++)
 {
 	console.log("Nabita");
 
@@ -37,14 +37,14 @@ console.log(pass);*/
 	}
 }
 
-*/
-/*var myTable= document.getElementById("nestedTable");
-for(var i=0;i<10;i++)
+var data=[];
+var myTable= document.getElementById("nestedTable");
+for(var i=0;i<40;i++)
 {
 	var row=document.createElement("tr");
 	myTable.append(row);
 	
-for(var ii=0;ii<10;ii++)
+for(var ii=0;ii<50;ii++)
 {
 	var col=document.createElement("td");
 	if(i%2==0){
@@ -58,12 +58,23 @@ for(var ii=0;ii<10;ii++)
 		else if(ii%2!=0)
 			col.setAttribute("class","class1");
 	}
+	data.push(col);
 	row.append(col);
 
 
 }
 }
-*/
+var tableindex;
+function Random()
+{
+	tableindex=Math.floor(Math.random()*data.length);
+	var r=Math.floor(Math.random()*256);
+	var g=Math.floor(Math.random()*256);
+	var b=Math.floor(Math.random()*256);
+	data[tableindex].style.backgroundColor="rgb("+r+","+g+","+b+")";
+	setTimeout(Random,0);
+}
+Random();
 var num=["0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"];
 var arr=["@","{","#","$","%"];
  function Check(str)
@@ -326,3 +337,5 @@ babycat.countlength();
 myString.LastIndex("m");
 myString.modSlice(1,4);
 console.log(myString.val);
+
+
