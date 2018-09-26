@@ -6,6 +6,7 @@ console.log("Hello World");
 
 var chars=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p"];
 var myTable= document.getElementById("nestedTable");
+var data = [];
 for(var i=0;i<4;i++)
 {
 	var row=document.createElement("tr");
@@ -26,29 +27,23 @@ for(var i=0;i<4;i++)
 		else if(ii%2!=0)
 			col.setAttribute("class","class1");
 	}
+	data.push(col);
 	row.append(col);
 }
 }
-$('td').text(function(){
-	return Math.floor(Math.random()*chars.length);
-});
+var dataInd = 0;
+var randInd;
+while(chars.length > 0){
+	var randInd = Math.floor(Math.random() * chars.length);
+	data[dataInd].innerHTML = chars[randInd];
+	chars.splice(randInd, 1);	
+	dataInd++;
+}
+
+
 //Jumbler function
 
-/*function findWord(word, jumbledLetters, isSameLength) {
-if(isSameLength && word.length !== jumbledLetters.length)
-return false;
 
-var uniquePosition = {};
-for(var i = 0; i< word.length; i++)
-for(var j=0; j< jumbledLetters.length; j++){
-  if(word[i] === jumbledLetters[j] && j !== uniquePosition[j]) {
-    uniquePosition[j] = j;
-    break;
-  }
-}
-return Object.keys(uniquePosition).length === (word.length);
-}
-findWord("fish"); */
 
 //Alert
 $(document).ready(function(){
@@ -72,8 +67,20 @@ $("#b2").click(function(){
         $("div").animate({
             left: '750px',
         });
-    });
-
-
-
+ });
+//Background color
+$("#change").click(function(){
+	if($(".para").css("background-color")== "rgba(0, 0, 0, 0)" ){
+		$(".para").css("background-color" ,"tomato")
+	}
+	else{
+		$(".para").css("background-color" ,"rgba(0, 0, 0, 0)")
+		}
 });
+
+
+
+
+}); //Document Ready
+
+
