@@ -1,0 +1,32 @@
+.b1
+{
+	background-color: blue;
+	color:white;
+}
+class1{
+	background-color: pink;
+}
+class2{
+	background-color: purple;
+}
+
+td
+{
+	width: 50px;
+	height:50px;
+	border: solid 1px black;
+}
+#panel, #flip {
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #111;
+    color: white;
+    border: solid 1px #666;
+    border-radius: 3px;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
